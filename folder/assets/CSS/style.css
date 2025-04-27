@@ -121,6 +121,10 @@ h1 {
         line-height: 1.3em;
         text-align: center;
     }
+    #start p {
+
+        font-size: 4em;
+    }
 }
 
 #start {
