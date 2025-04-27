@@ -40,5 +40,16 @@ function createHeart() {
     heart.remove();
   }, 6000);
 }
+
+window.addEventListener('load', function() {
+  const musica = document.getElementById('musica');
+  const startDiv = document.getElementById('start');
+
+  startDiv.addEventListener('click', function() {
+      musica.play();
+      startDiv.style.display = 'none'; // Esconde o botão depois de tocar
+  });
+});
+
 setInterval(createHeart, 200);
 setInterval(counterAtt, 1000);
